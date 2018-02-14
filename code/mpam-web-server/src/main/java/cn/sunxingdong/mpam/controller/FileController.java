@@ -1,6 +1,8 @@
 package cn.sunxingdong.mpam.controller;
 
+import cn.sunxingdong.mpam.biz.intf.file.service.FileService;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,8 +23,8 @@ public class FileController {
     /**
      * fileUploadDownloadService <br>
      */
-    //@Autowired
-    //private FileService fileService;
+    @Autowired
+    private FileService fileService;
 
     /**
      * uploadMaxSize <br>
