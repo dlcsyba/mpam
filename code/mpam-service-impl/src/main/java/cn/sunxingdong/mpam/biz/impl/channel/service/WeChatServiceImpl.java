@@ -1,14 +1,14 @@
-package cn.sunxingdong.mpam.channel.service.impl;
+package cn.sunxingdong.mpam.biz.impl.channel.service;
 
-import cn.sunxingdong.mpam.api.TulingApiProcess;
-import cn.sunxingdong.mpam.channel.model.WeChatMessageDto;
-import cn.sunxingdong.mpam.channel.service.WeChatService;
+import cn.sunxingdong.mpam.common.api.TulingApiProcess;
+import cn.sunxingdong.mpam.biz.intf.channel.model.WeChatMessageDto;
+import cn.sunxingdong.mpam.biz.intf.channel.service.WeChatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
 
-@Service("WeChatService")
+@Service("weChatService")
 public class WeChatServiceImpl implements WeChatService {
 
     @Autowired

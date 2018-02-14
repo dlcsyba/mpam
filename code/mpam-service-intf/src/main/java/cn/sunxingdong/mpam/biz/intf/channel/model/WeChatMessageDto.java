@@ -1,4 +1,4 @@
-package cn.sunxingdong.mpam.channel.model;
+package cn.sunxingdong.mpam.biz.intf.channel.model;
 
 public class WeChatMessageDto {
     private String ToUserName;

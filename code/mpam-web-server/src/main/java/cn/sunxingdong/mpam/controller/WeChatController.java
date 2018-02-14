@@ -1,7 +1,7 @@
 package cn.sunxingdong.mpam.controller;
 
-import cn.sunxingdong.mpam.channel.model.WeChatMessageDto;
-import cn.sunxingdong.mpam.channel.service.WeChatService;
+import cn.sunxingdong.mpam.biz.intf.channel.model.WeChatMessageDto;
+import cn.sunxingdong.mpam.biz.intf.channel.service.WeChatService;
 import org.dom4j.Document;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
