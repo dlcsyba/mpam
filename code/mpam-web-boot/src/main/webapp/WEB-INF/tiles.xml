@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <!-- 定义一个基础模板页 -->
+    <definition name="template_base" template="/WEB-INF/public/template.jsp"></definition>
+
+    <!-- 不继承直接引用也行 -->
+    <definition name="baseLayout" extends="template_base">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/public/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/public/left-sidebar.jsp" />
+        <put-attribute name="body" value="/WEB-INF/public/content-right.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/public/footer.jsp" />
+    </definition>
+
+    <!-- 右侧内容模板定义 -->
+    <definition name="contentLayout" template="/WEB-INF/public/content.jsp">
+        <put-attribute name="body" value="/WEB-INF/public/content-right.jsp"/>
+    </definition>
+
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="公共平台管理系统-主页面"/>
+        <put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+    </definition>
+
+</tiles-definitions>
